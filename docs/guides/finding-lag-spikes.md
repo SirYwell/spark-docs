@@ -50,7 +50,7 @@ You can use Step 1 to determine a good threshold value, I recommend using a valu
 
 For example, the laggy actions identified in my example in step 1 were over 300 milliseconds, but just to be sure they'll be included, I'll use a lower threshold of 150 milliseconds.
 
-Then run, for example, `/spark profiler --only-ticks-over 150`.
+Then run, for example, `/spark profiler start --only-ticks-over 150`.
 
 This will start a new profiler, but will only include samples from ticks that took over 150ms to execute.
 
